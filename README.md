@@ -1,11 +1,8 @@
-# BasicsDatabinding
+# Angular Training examples
 
-Course [Angular CLI](https://udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/6655886#overview) version
-17.0.0-rc.5.
+[Training videos](https://udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/6655886#overview) 
 
-## Development server
-
-Section 2 - The basics
+## Section 2 - The basics
 
 - Data Bindings
 
