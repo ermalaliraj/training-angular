@@ -16,9 +16,9 @@
     - 2 way binding  => fetch our input data
     - String interpolation => output the data
 
+    <button [disabled]="!allowNewServer">...</button>           PB
     <input (input)="onUpdateServerName($event)">                EB
     <input [(ngModel)]="serverName">                            2Way
-    <button [disabled]="!allowNewServer">...</button>           PB
     <p>{{ serverCreationStatus }}</p>                           SI
 
 - Directives
@@ -66,4 +66,15 @@ Access to template . Local references
 ng-content 
   Add content into a component
 
-onInit
+## Section 6
+
+    <p appBetterHighlight2 [highlightColor]="'red'">...</p>
+    <p appBetterHighlight2 highlightColor="red">...</p>                  //equivalent
+    <p [appBetterHighlight]="'cyan'" [defaultColor]="'yellow'">...</p>   // or , if   @Input('appBetterHighlight') 
+
+    @HostBinding('style.backgroundColor') backgroundColor: string= 'red';    // bind to property like: {style = "background-color: red"}
+    @HostListener('mouseenter') mouseover(eventData: Event)                  // bind to Listener
+
+    or
+    constructor(private elRef: ElementRef, private renderer: Renderer2) { }
+    this.renderer.setStyle(this.elRef.nativeElement, 'background-color', 'red');

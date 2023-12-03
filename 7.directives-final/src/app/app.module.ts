@@ -20,6 +20,9 @@ import { UnlessDirective } from './unless.directive';
     FormsModule,
   ],
   providers: [],
+  exports: [
+    BetterHighlightDirective
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
