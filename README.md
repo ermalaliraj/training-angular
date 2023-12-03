@@ -2,6 +2,11 @@
 
 [Training videos](https://udemy.com/course/the-complete-guide-to-angular-2/learn/lecture/6655886#overview) 
 
+## Create 
+    
+    ng new prj-name
+    ng generate component 
+    ng g c --skipTests
 ## Section 2 - The basics
 
 - Data Bindings
